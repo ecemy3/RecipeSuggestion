@@ -1,0 +1,51 @@
+# Binaries and executables
+bin/
+obj/
+*.dll
+*.exe
+*.pdb
+*.so
+*.dylib
+
+# Visual Studio cache/options
+.vs/
+.vscode/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+
+# NuGet Packages
+*.nupkg
+*.snupkg
+.nuget/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# ReSharper is a .NET coding assist-in tool
+.idea/
+*.sln.iml
+
+# Local History
+.local/
+.history/
+
+# Visual Studio Code
+launch.json
+settings.json
+
+# OS files
+.DS_Store
+Thumbs.db
