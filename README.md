@@ -1,115 +1,116 @@
-# RecipeSuggestion - Tarif Önerisi Uygulaması
+RecipeSuggestion - Recipe Recommendation Application
 
-Kullanıcıların tarif ekleyebileceği, düzenleyebileceği, silebileceği ve arayabileceği bir C# Windows Forms uygulaması.
+A C# Windows Forms application where users can add, edit, delete, and search recipes.
 
-## Özellikler
+Features
 
-- ✨ **Tarif Yönetimi**: Yeni tarifler ekleyin, düzenleyin ve silin
-- 🔍 **Arama ve Filtreleme**: Tarifler arasında kolayca arama yapın
-- 📋 **Malzeme Yönetimi**: Tariflerle ilişkili malzemeleri yönetin
-- 📊 **Tarif Detayları**: Her tarife ait ayrıntılı bilgileri görüntüleyin
+✨ Recipe Management: Add, edit, and delete recipes
 
-## Proje Yapısı
+🔍 Search & Filtering: Easily search through all recipes
 
-```
+📋 Ingredient Management: Manage ingredients associated with each recipe
+
+📊 Recipe Details: View detailed information for every recipe
+
+Project Structure
+
 RecipeSuggestion/
 ├── DataAcsess/
-│   └── DataBase.cs          # Veritabanı işlemleri
+│ └── DataBase.cs – Handles all database operations
 ├── Models/
-│   ├── Tarif.cs             # Tarif modeli
-│   ├── Malzeme.cs           # Malzeme modeli
-│   └── Tarif_Malzeme.cs     # Tarif-Malzeme ilişkisi
+│ ├── Tarif.cs – Recipe model
+│ ├── Malzeme.cs – Ingredient model
+│ └── Tarif_Malzeme.cs – Recipe-Ingredient relation model
 ├── Forms/
-│   ├── Form1.cs             # Ana form
-│   ├── TarifEkle.cs         # Tarif ekleme formu
-│   ├── TarifGuncelle.cs     # Tarif güncelleme formu
-│   ├── TarifSil.cs          # Tarif silme formu
-│   ├── AramaFiltreleme.cs   # Arama ve filtreleme formu
-│   └── Detay.cs             # Tarif detay formu
+│ ├── Form1.cs – Main form
+│ ├── TarifEkle.cs – Add recipe form
+│ ├── TarifGuncelle.cs – Update recipe form
+│ ├── TarifSil.cs – Delete recipe form
+│ ├── AramaFiltreleme.cs – Search & filter form
+│ └── Detay.cs – Recipe detail form
 └── README.md
 
-```
+Technology Stack
 
-## Teknoloji Stack
+Platform: .NET 8.0 (Windows)
 
-- **Platform**: .NET 8.0 (Windows)
-- **UI**: Windows Forms
-- **Dil**: C#
-- **Veritabanı**: SQL Server / SQL Compact
+UI: Windows Forms
 
-## Kurulum
+Language: C#
 
-### Gereksinimler
-- .NET 8.0 SDK veya üzeri
-- Visual Studio 2022 (veya Visual Studio Code)
+Database: SQL Server / SQL Compact
 
-### Adımlar
+Installation
+Requirements
 
-1. Repository'yi klonlayın:
-```bash
+.NET 8.0 SDK or newer
+
+Visual Studio 2022 (or VS Code)
+
+Steps
+
+Clone the repository:
 git clone https://github.com/ecemy3/RecipeSuggestion.git
+
 cd RecipeSuggestion
-```
 
-2. Bağımlılıkları yükleyin:
-```bash
+Restore dependencies:
 dotnet restore
-```
 
-3. Uygulamayı çalıştırın:
-```bash
+Run the application:
 dotnet run
-```
 
-## Kullanım
+Usage
+Main Screen
 
-### Ana Ekran
-- Tüm tarifler listelenir
-- Tarif seçerek detaylarını görebilirsiniz
+Displays all recipes
 
-### Tarif Ekleme
-1. "Yeni Tarif Ekle" butonuna tıklayın
-2. Tarif bilgilerini girin
-3. Malzemeleri ekleyin
-4. "Kaydet" butonuna tıklayın
+Select any recipe to view its details
 
-### Tarif Arama
-1. "Arama/Filtreleme" kısmını kullanın
-2. Tarif adı veya malzeme adı ile arayın
+Adding a Recipe
 
-### Tarif Güncelleme
-1. Listeden tarifi seçin
-2. "Düzenle" butonuna tıklayın
-3. Bilgileri güncelleyin
-4. "Kaydet" butonuna tıklayın
+Click “Add New Recipe”
 
-### Tarif Silme
-1. Listeden tarifi seçin
-2. "Sil" butonuna tıklayın
-3. Silme işlemini onaylayın
+Enter recipe information
 
-## Dosya Yapısı
+Add ingredients
 
-| Dosya | Açıklama |
-|-------|----------|
-| `Form1.cs` | Ana uygulama formu |
-| `TarifEkle.cs` | Yeni tarif ekleme formu |
-| `TarifGuncelle.cs` | Tarif güncelleme formu |
-| `TarifSil.cs` | Tarif silme formu |
-| `AramaFiltreleme.cs` | Arama ve filtreleme formu |
-| `Detay.cs` | Tarif detay görüntüleme formu |
-| `DataBase.cs` | Veritabanı işlemlerini yönetir |
+Click “Save”
 
-## Lisans
+Searching Recipes
 
-Bu proje açık kaynak kodlu olup kişisel kullanım için tasarlanmıştır.
+Open the “Search/Filter” section
 
-## İletişim
+Search by recipe name or ingredient name
 
-**Geliştirici**: ecemy3  
-**GitHub**: [ecemy3](https://github.com/ecemy3)  
-**E-mail**: ecemyalcin3434@gmail.com
+Updating a Recipe
 
----
+Select a recipe from the list
 
-**Son Güncelleme**: Kasım 2025
+Click “Edit”
+
+Update the information
+
+Click “Save”
+
+Deleting a Recipe
+
+Select a recipe
+
+Click “Delete”
+
+Confirm the deletion
+
+File Overview
+
+Form1.cs – Main application form
+TarifEkle.cs – Add recipe form
+TarifGuncelle.cs – Update recipe form
+TarifSil.cs – Delete recipe form
+AramaFiltreleme.cs – Search and filter form
+Detay.cs – Recipe detail display form
+DataBase.cs – Handles all database operations
+
+License
+
+This project is open-source and intended for personal use.
